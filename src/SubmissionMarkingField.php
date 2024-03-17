@@ -49,6 +49,7 @@ class SubmissionMarkingField extends Field
             foreach ($json as $item) {
                 if ($item['id'] === $assessmentCriteria->id) {
                     $html = NovaEditorJs::generateHtmlOutput($item['content'] ?: []);
+                    $html = $html->__toString();
                 }
             }
 
