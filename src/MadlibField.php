@@ -23,7 +23,7 @@ class MadlibField extends Field
     // @todo add
     //public $detailItemComponent = 'detail-nova-items-field-item';
 
-    public function resolve($resource, $attribute = null)
+    public function resolve($resource, ?string $attribute = null): void
     {
         parent::resolve($resource, $attribute);
 

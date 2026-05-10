@@ -19,7 +19,7 @@ class MultichoiceField extends Field
     public $deleteButtonValue = "x";
     public $listFirst = false;
 
-    public function resolve($resource, $attribute = null)
+    public function resolve($resource, ?string $attribute = null): void
     {
         parent::resolve($resource, $attribute);
 

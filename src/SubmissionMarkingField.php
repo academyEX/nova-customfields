@@ -13,7 +13,7 @@ class SubmissionMarkingField extends Field
 {
     public $component = 'submission-marking-field';
 
-    public function __construct($name, $attribute = null, callable $resolveCallback = null)
+    public function __construct($name, $attribute = null, ?callable $resolveCallback = null)
     {
         parent::__construct($name, $attribute, $resolveCallback);
 
@@ -27,7 +27,7 @@ class SubmissionMarkingField extends Field
      * @param string $attribute
      * @throws Throwable
      */
-    public function resolve($resource, $attribute = null)
+    public function resolve($resource, ?string $attribute = null): void
     {
         parent::resolve($resource, $attribute);
 
